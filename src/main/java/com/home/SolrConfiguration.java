@@ -1,4 +1,4 @@
-package com.home.test.solr.config;
+package com.home;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -30,7 +30,8 @@ public class SolrConfiguration {
 
 	@Bean
 	public SolrServer solrServer() throws MalformedURLException {
-		return new LBHttpSolrServer(solrUrl.split(","));
+		SolrServer server = new LBHttpSolrServer(solrUrl.split(","));
+		return server;
 	}
 
 	@Bean

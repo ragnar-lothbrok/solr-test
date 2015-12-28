@@ -1,0 +1,12 @@
+#Stopwords for example.com
+a
+an
+and
+are
+as
+at
+be
+but
+by
+for
+if
